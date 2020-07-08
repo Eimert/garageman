@@ -15,12 +15,12 @@ public class MongoConfig {
     private Environment env;
 
     @Bean
-    public MongoClient mongo() {
+    public MongoClient mongoClient() {
         return MongoClients.create(env.getRequiredProperty("spring.data.mongodb.uri"));
     }
 
     @Bean
     public MongoTemplate mongoTemplate() throws Exception {
-        return new MongoTemplate(mongo(), "garagedb");
+        return new MongoTemplate(mongoClient(), "garagedb");
     }
 }

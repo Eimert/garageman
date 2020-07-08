@@ -2,10 +2,12 @@ package nl.eimertvink.garageman.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
+@Document(collection = "inventory.car")
 public class Car extends AbstractEntity {
 
     @Getter

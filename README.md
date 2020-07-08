@@ -11,6 +11,7 @@ Created in July 2020.
 
 ## Getting started
 - `git clone` this project, import into IDE, let maven install all the dependencies.
+- Install the Lombok annotation processor plugin for IntelliJ if not yet installed.
 - Ask Eimert for the db connection string, and configure it in the JVM_OPTS.
 - Make sure the application has [status "UP"](http://localhost:8080/actuator/health).
 
