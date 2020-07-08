@@ -32,3 +32,6 @@ build/
 
 ### Other ###
 .secret
+mvnw
+mvnw.cmd
+.mvn/
