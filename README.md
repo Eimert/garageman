@@ -2,6 +2,8 @@
 
 Spring back-end for Frank's garage. Full-stack challenge showcase project.
 
+![Garageman](https://pbs.twimg.com/profile_images/748552032022323200/hEhnq_sU_400x400.jpg)
+
 Created in July 2020.
 
 ## Technology

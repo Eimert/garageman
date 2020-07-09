@@ -39,9 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            // disable csrf on client-side stateless urls
-            .csrf()
-                .ignoringAntMatchers("/api/v1/")
+            .cors()
             .and()
             .authorizeRequests()
             .mvcMatchers("/api/v1/**")
